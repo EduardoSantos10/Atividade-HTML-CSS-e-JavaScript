@@ -1,6 +1,6 @@
 body{
-background-color: green; /*Cor de Fundo*/
-color:#0c34e7 ;/* Cor do Texto*/
+background-color: rgb(17, 19, 148); /*Cor de Fundo*/
+color:greenyellow ;/* Cor do Texto*/
 font-size: 20px; /*Tamanho da Fonte*/
 margin: 0; /*Margem em relação a tela*/
 }/*Comentários */
@@ -10,7 +10,7 @@ border: 2px solid #000;
 text-align: center;
 }/*Seletor do Cabeçalo*/
 
-li{
+.botoesMenu, li{
     color: #fff;
     list-style-type: none;/* Remover as Bolinhas de Tópicos */
     display: inline;/*Transformar coluna em linhas*/
@@ -19,8 +19,8 @@ li{
     background-color: #000;
 }
 
-li:hover{
-    background-color: #4444;
+.botoesMenu:hover{
+    background-color: #000;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;/* Definir uma fonte */
     border: 10px solid #666;
@@ -28,14 +28,69 @@ li:hover{
 }/* Modifica o conteúdo original da Tag*/
 
 #paginaInicial{
-    color: #000;
+    color: #fff;
 }/* Chamando Id */
 
 .titulo{
     border: 2px solid #666;
+    font-size: 200%;
 }/* chamando classe */
 
-aside{
-    background-image: url("../IMAGENS/plano\ de\ fundo.jpg");
-    background-repeat: no-repeat;
+
+
+.imgFmt{
+    /* Formatar a imagem */
+    width: 70% ; /* Altura */
+    height: 70% ; /* Largura */
+}
+
+.galeria{
+    display: grid; /* Formato de Visualização - Tabela*/
+    grid-template-columns: 30% 30% 30%;/* Quantidade de Colunas*/
+    grid-template-rows: 30% 30% 30%; /* Quantidade de Linhas*/
+    grid-gap: 1%; /* Espaço entre os Conteúdos*/
+    margin-left: 5%; /* Margem do Lado Esquerdo*/
+}
+
+article{
+    border: 2px solid #000;
+    text-align: center; /* Alinhamento do Texto */
+    color: #000;
+    font-size: 90%;
+    background-color: #fff;
+    padding-bottom: 5%;
+}
+
+h3{
+    border: 2px solid black; /* Bordas */
+    margin-top: 0%; /* Espaço Externo*/
+    padding: 3%; /* Espaço Interno*/
+    background-color: #000; /* Cor de Plano de Fundo */
+    color: #fff; /* Mudar a fonte */
+    font-size: 150%; /* Tamanho da Fonte */
+}
+
+a{
+    border: 2px solid #000;
+    padding: 5%;
+    font-weight: bold; /* Negrito */
+    background-color: #888;
+    color: #fff;
+    font: 120%;
+    margin-top: 20%;
+    padding-left: 16%;
+    padding-right: 16%;
+}
+
+.descricao{
+    padding-bottom: 5%;
+    padding-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+    font: 130%;
+    border-radius: 50%;
+    margin-bottom: 7%; /* Parte de Baixo (Mover Para Baixo) */
 }
